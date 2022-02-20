@@ -1,6 +1,14 @@
 /*font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   font-family: Roboto, sans-serif;
 }
@@ -21,11 +29,17 @@ button {
   cursor: pointer;
 }
 .header {
+  display: flex;
   font-family: Roboto;
   background: #ffffff;
 }
 /* WebStudio */
+.header {
+  width: 1200px;
+}
 .header-logo {
+  margin-left: 215px;
+  margin-top: 24px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -49,6 +63,7 @@ button {
 }
 /* Студия */
 .header-item-studio {
+  margin-left: 252px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -74,6 +89,7 @@ button {
 }
 /* Портфолио */
 .header-item-portfolio {
+  margin-top: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -137,53 +153,41 @@ button {
 }
 
 /* Bg */
+.hero-list {
+  display: flex;
+}
 .unique-content {
+  width: 1600px;
   background-color: #2f303a;
 }
 /* Эффективные решения для вашего бизнеса */
 .main-logo {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 44px;
-  font-weight: 900;
-
   color: #ffffff;
 }
 
 /* bg кнопка */
 .main-button {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
+  text-align: center;
+  font-family: inherit;
+  display: inline-block;
+  padding-top: 430px;
+  padding-left: 700px;
+  padding: bottom 200px;
+  letter-spacing: 0.06em;
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   color: #ffffff;
 }
 .main-button:hover,
 .main-button:focus {
   font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 30px;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  font-family: Roboto;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
 }
 /* Внимание к деталям */
 .hero-title-atention {
@@ -196,7 +200,6 @@ button {
 }
 /* Идейные соображения, а также начало повседневной работы по формированию позиции. */
 .upper-title-atention {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -204,7 +207,6 @@ button {
 }
 /* Пунктуальность */
 .hero-title-punctuality {
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.03em;
@@ -254,7 +256,6 @@ button {
 }
 /* Значимость этих проблем настолько очевидна, что реализация плановых заданий. */
 .upper-title-tehnology {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -262,10 +263,16 @@ button {
   color: #757575;
 }
 /* Чем мы занимаемся */
+.study-list {
+  display: flex;
+}
 .study-title {
-  color: #212121;
-  font-weight: bold;
   font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
 /* img */
 .study-item-image {
@@ -299,13 +306,18 @@ button {
   width: 1600px;
   background: #f5f4fa;
 }
+.about-list {
+  display: flex;
+}
 /* Наша команда */
 .about-text {
+  margin-left: 668px;
   color: #212121;
   font-weight: bold;
   font-size: 36px;
 }
 .about-item-comand {
+  margin-left: 215px;
   width: 1170px;
 }
 .about-imag1 {
@@ -326,6 +338,7 @@ button {
 }
 /* img2 */
 .about-item-block {
+  padding: 30px;
   width: 270px;
 }
 .about-imag2 {
@@ -508,19 +521,24 @@ button {
   color: #2196f3;
 }
 /* КНОПКИ*/
+.list-button {
+  display: flex;
+}
 .header-list {
   font-family: Roboto;
 }
 .button-all {
-  font-family: Roboto;
-  font-style: normal;
+  text-align: center;
+  display: inline-block;
+  padding: 6px 12px;
+  display: inline;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+
   letter-spacing: 0.03em;
-  width: 73px;
-  height: 38px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 
   color: #212121;
 }
@@ -534,16 +552,20 @@ button {
   color: #ffffff;
 }
 .button-web {
+  text-align: center;
+  display: inline-block;
+  padding: 6px 12px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   width: 128px;
   height: 38px;
   color: #212121;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .button-web:hover,
 .button-web:focus {
@@ -554,16 +576,19 @@ button {
   color: #ffffff;
 }
 .button-app {
+  text-align: center;
+  display: inline-block;
+  padding: 6px 12px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   width: 145px;
   height: 38px;
   color: #212121;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .button-app:hover,
 .button-app:focus {
@@ -574,17 +599,21 @@ button {
   color: #ffffff;
 }
 .button-design {
+  text-align: center;
+  display: inline-block;
+  padding: 6px 12px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   width: 103px;
   height: 38px;
   cursor: pointer;
   color: #212121;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .button-design:hover,
 .button-design:focus {
@@ -595,16 +624,20 @@ button {
   color: #ffffff;
 }
 .button-marketing {
+  text-align: center;
+  display: inline-block;
+  padding: 6px 12px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   width: 130px;
   height: 38px;
   color: #212121;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 .button-marketing:hover,
 .button-marketing:focus {
