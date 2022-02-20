@@ -29,7 +29,6 @@ button {
   cursor: pointer;
 }
 .header {
-  display: flex;
   font-family: Roboto;
   background: #ffffff;
 }
@@ -38,8 +37,6 @@ button {
   width: 1200px;
 }
 .header-logo {
-  margin-left: 215px;
-  margin-top: 24px;
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -63,7 +60,6 @@ button {
 }
 /* Студия */
 .header-item-studio {
-  margin-left: 252px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -177,9 +173,7 @@ button {
   text-align: center;
   font-family: inherit;
   display: inline-block;
-  padding-top: 430px;
-  padding-left: 700px;
-  padding: bottom 200px;
+  padding-top: 10px;
   letter-spacing: 0.06em;
   background: #2196f3;
   color: #ffffff;
@@ -264,7 +258,6 @@ button {
 }
 /* Чем мы занимаемся */
 .study-list {
-  display: flex;
 }
 .study-title {
   font-size: 36px;
@@ -307,17 +300,14 @@ button {
   background: #f5f4fa;
 }
 .about-list {
-  display: flex;
 }
 /* Наша команда */
 .about-text {
-  margin-left: 668px;
   color: #212121;
   font-weight: bold;
   font-size: 36px;
 }
 .about-item-comand {
-  margin-left: 215px;
   width: 1170px;
 }
 .about-imag1 {
@@ -338,8 +328,6 @@ button {
 }
 /* img2 */
 .about-item-block {
-  padding: 30px;
-  width: 270px;
 }
 .about-imag2 {
   width: 270px;
@@ -528,8 +516,8 @@ button {
   font-family: Roboto;
 }
 .button-all {
+  font-family: inherit;
   text-align: center;
-  display: inline-block;
   padding: 6px 12px;
   display: inline;
   font-weight: 500;
@@ -652,8 +640,6 @@ button {
 .main-content-one {
   width: 370px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 .image-one {
   width: 370px;
